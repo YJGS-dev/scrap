@@ -11,7 +11,7 @@ from scrap import (
 
 app = FastAPI()
 
-@app.get("/walmart")
+@app.get("/api/walmart")
 async def walmart():
     html = getWalmartHTML()
     soup_object = getHTMLParser(html)
@@ -25,7 +25,7 @@ async def walmart():
     return data
 
 
-@app.get("/tiendas_jumbo/{url:path}")
+@app.get("/api/tiendas_jumbo/{url:path}")
 async def tiendas_jumbo(url: str = Path(..., description="URL de la categoria del sitio")):
     url = url
     browser = getDriver()

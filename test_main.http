@@ -1,11 +1,11 @@
 # Test your FastAPI endpoints
 
-GET http://127.0.0.1:8000/walmart
+GET http://127.0.0.1:8000/api/walmart
 Accept: application/json
 
 ###
 
-GET http://127.0.0.1:8000/tiendas_jumbo/https://www.tiendasjumbo.co/televisores-y-audio
+GET http://127.0.0.1:8000/api/tiendas_jumbo/https://www.tiendasjumbo.co/televisores-y-audio
 Accept: application/json
 
 ###
